@@ -3,7 +3,7 @@ package dsa;
 public class Leanersearch {
     public static void main(String  [] pallavi ) {
         int[] arr = new int[]{1,2,3,4,5,60,1,3,4};
-        int tr = 100;
+        int tr = 60;
         Leanersearch obj = new Leanersearch();
         int a = obj.checktarget(arr,tr);
         System.out.println("value is : " +a);
