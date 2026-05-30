@@ -7,13 +7,13 @@ class PrintNumbers{
 public synchronized void printOdd()
 {
     while(number<=MAX){
-        while(number % 2 == 0){
+        if(number % 2 == 0){
             try {
                 wait();
             } catch (InterruptedException e ) {
                 e.printStackTrace();
             }
-        } if(number <=MAX) {
+        } else if(number <=MAX) {
             System.out.println("Odd =" +number);
             number ++;
             notify();
@@ -23,13 +23,13 @@ public synchronized void printOdd()
 
 public synchronized void printEven(){
     while(number <= MAX) {
-        while(number % 2 == 1) {
+        if (number % 2 == 1) {
             try {
                 wait();
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-        } if (number<= MAX) {
+        } else if (number<= MAX) {
             System.out.println("Even " + number);
             number++;
             notify();
