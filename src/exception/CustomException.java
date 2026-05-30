@@ -8,7 +8,7 @@ class InvalidAgeException extends Exception {
 public class CustomException {
     static void checkAge(int age) throws InvalidAgeException {
         if (age < 18) {
-            throw new InvalidAgeException(" ❌ Age must me be 18 or above 18");
+            throw new InvalidAgeException("Age must me be 18 or above 18");
         } else {
             System.out.println("You are eligible to vote");
         }
@@ -20,9 +20,7 @@ public class CustomException {
             checkAge(15);
             checkAge(20);
         }
-    catch(
-    InvalidAgeException e)
-
+    catch(InvalidAgeException e)
     {
         System.out.println("Exception Caught: " + e.getMessage());
     }

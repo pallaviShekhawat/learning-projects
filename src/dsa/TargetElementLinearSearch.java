@@ -1,12 +1,12 @@
 package dsa;
 
-public class LinearSearch {
+public class TargetElementLinearSearch {
 
     public static void main(String[] args) {
         int[] arr = {10, 50, 65, 55, 85, 100};
         int target = 55;
 
-        LinearSearch obj = new LinearSearch();
+        TargetElementLinearSearch obj = new TargetElementLinearSearch();
         int index = obj.checktarget(arr, target);
 
         System.out.println("Target Value is found at : arr[" + index + "]" );

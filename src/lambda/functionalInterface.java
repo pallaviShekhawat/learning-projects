@@ -20,3 +20,5 @@ public class functionalInterface {
         System.out.println(f1.calc(2,3));
     }
 }
+
+

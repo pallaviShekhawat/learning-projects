@@ -4,7 +4,7 @@ package oops;
 //Occurs when a subclass provides a specific implementation of a method that is already defined in its superclass, with the exact same method signature (name, parameters, and return type)
 //Child class, parent class ke method ka same signature ke saath new implementation deti hai.
 //➡ Decision runtime pe hota hai (Dynamic Method Dispatch).
-//“Dynamic Method Dispatch is a runtime mechanism in Java where the JVM determines which overridden method to invoke based on the actual object type, enabling runtime polymorphism.”
+//“Dynamic Method Dispatch is a runtime mechanism in Java where the JVM determines which overridden method to invoke based on the actual object type not the reference type, enabling runtime polymorphism.”
 //Kaunsa method call hoga ye decide based on actual object ye karta h
 
 public class runtimeAnimal {
